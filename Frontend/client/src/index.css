@@ -1,0 +1,472 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #0f172a;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.builder-container {
+  display: flex;
+  gap: 32px;
+  height: 100vh;
+  padding: 24px;
+}
+
+.form-panel {
+  width: 50%;
+  overflow-y: auto;
+}
+
+.preview-panel {
+  width: 50%;
+  overflow-y: auto;
+  background: #eef2ff;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+/* =====================
+   CARDS
+===================== */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 28px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.card h3 {
+  margin: 0 0 18px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: 0.3px;
+}
+
+/* =====================
+   FORM ELEMENTS
+===================== */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* =====================
+   TEXTAREAS (WIDE & COMFORTABLE)
+===================== */
+.textarea-wide {
+  min-height: 200px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.textarea-medium {
+  min-height: 150px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+.btn-success {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #15803d;
+}
+
+/* =====================
+   GRIDS
+===================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+/* =====================
+   EXPERIENCE / PROJECT CARDS
+===================== */
+.sub-card {
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 18px;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+/* =====================
+   PREVIEW DOCUMENT
+===================== */
+.preview-panel h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.preview-panel h3 {
+  font-size: 16px;
+  margin-top: 28px;
+  border-bottom: 1px solid #c7d2fe;
+  padding-bottom: 4px;
+  color: #1e3a8a;
+}
+
+.preview-panel p,
+.preview-panel li {
+  font-size: 14px;
+  color: #334155;
+}
+
+.preview-panel ul {
+  padding-left: 20px;
+}
+
+/* =====================
+   FIELD SPACING FIX
+===================== */
+
+/* Space between stacked inputs inside cards */
+.card input,
+.card textarea {
+  margin-bottom: 14px;
+}
+
+/* Extra spacing between logical blocks */
+.sub-card {
+  padding: 22px;
+}
+
+/* Spacing between rows (Company/Role, Dates) */
+.row-2 {
+  margin-bottom: 16px;
+}
+
+/* Ensure textarea doesn’t stick to last input */
+.sub-card textarea {
+  margin-top: 6px;
+}
+
+/* Education / Experience inner padding */
+.card > div {
+  margin-bottom: 20px;
+}
+/* ============================
+   SECTION DIVIDERS
+============================ */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #c7d2fe, transparent);
+  margin: 32px 0;
+}
+
+/* ============================
+   CARD SPACING IMPROVEMENTS
+============================ */
+.card {
+  position: relative;
+}
+
+.card .form-group {
+  margin-bottom: 20px;
+}
+
+/* ============================
+   EXPERIENCE / EDUCATION BLOCKS
+============================ */
+.sub-card {
+  background: #f8fafc;
+  padding: 22px 24px;
+  border-radius: 14px;
+  border-left: 4px solid #2563eb;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+/* Timeline dot */
+.sub-card::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 28px;
+  width: 14px;
+  height: 14px;
+  background: #2563eb;
+  border-radius: 50%;
+}
+
+/* ============================
+   INPUT SPACING FIX
+============================ */
+.sub-card input,
+.sub-card textarea {
+  margin-bottom: 16px;
+}
+
+/* ============================
+   ROW GROUPING
+============================ */
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+/* ============================
+   SECTION COMPLETION INDICATOR
+============================ */
+.section-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.section-status.complete {
+  color: #16a34a;
+}
+
+.section-status span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cbd5e1;
+}
+
+.section-status.complete span {
+  background: #16a34a;
+}
+.section-hint {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 14px;
+}
+
+.resume-preview-card {
+  background: #ffffff;
+  padding: 56px;
+  border-radius: 18px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+
+  .print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: white;
+  }
+}
+/* ===============================
+   ATS ANALYZER CONTAINER
+================================ */
+.ats-analyzer {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin-top: 24px;
+}
+
+/* Title */
+.ats-analyzer h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* ===============================
+   JOB DESCRIPTION TEXTAREA
+================================ */
+.ats-analyzer textarea {
+  width: 100%;
+  min-height: 140px;
+  resize: vertical;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ats-analyzer textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* ===============================
+   ANALYZE BUTTON
+================================ */
+.ats-analyzer button {
+  margin-top: 14px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: #ffffff;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.ats-analyzer button:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.ats-analyzer button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   RESULT SECTION
+================================ */
+.ats-result {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Score + Match Level */
+.ats-result p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #111827;
+}
+
+/* ===============================
+   KEYWORD LISTS
+================================ */
+.ats-result strong {
+  font-weight: 600;
+}
+
+.ats-result ul {
+  margin-top: 6px;
+  padding-left: 18px;
+}
+
+.ats-result li {
+  font-size: 13.5px;
+  margin-bottom: 4px;
+  color: #374151;
+}
+
+/* ===============================
+   MATCH LEVEL COLORS
+================================ */
+.match-strong {
+  color: #16a34a; /* green */
+  font-weight: 600;
+}
+
+.match-moderate {
+  color: #d97706; /* amber */
+  font-weight: 600;
+}
+
+.match-poor {
+  color: #dc2626; /* red */
+  font-weight: 600;
+}
+
+/* ===============================
+   ERROR MESSAGE
+================================ */
+.ats-error {
+  margin-top: 10px;
+  color: #dc2626;
+  font-size: 13px;
+}

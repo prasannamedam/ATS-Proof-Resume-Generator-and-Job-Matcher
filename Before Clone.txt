@@ -1,0 +1,16 @@
+Before clone:
+Read me:
+front end part:
+first create project in VS ==> create two folders Front end and server =>> in front end folder create client folder ==> in client folder install react => you install using vite ==> src folder will be created in client automatically when react is installed ==> create folders components, pages,context in src folder => add respective uploaded files in folders as per git. ==> add uploaded index.css/ or you can copy paste the content for css . i would recommend creating another .css and copying the content from the git. ==> replace content of app.js and index.js as per git uploaded files with same name.
+
+Backend part :
+first create another folder name server in project => run these commands in powershell in server folder==> npm init -y => npm install cors mongoose dotenv express => these will install your dependencies. => create .env files where you place your MONGO_URL as you will get when you sign up on mongodb atlas and create cluster.=> reference is already use in index.js you have place your url in .env file.
+==> create folder named models and routes in server folder add uploaded respective files in it.
+
+this is our both frontend and backend done ..
+Now you have to make changes in package.json in server. in "scripts" part remove whats there and add "start": "node index.js"
+
+Now while running code in terminal first run backend part ==> cd server ==> npm start ==> backend is connected ==> make sure get message Mongodb connected.
+
+Now open another powershell terminal ==> cd frontend => cd client ==> npm start => this will render output on browser automatically.
+
