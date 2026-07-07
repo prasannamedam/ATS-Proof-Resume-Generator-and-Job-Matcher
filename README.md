@@ -180,4 +180,15 @@ These are planned for future iterations.
 - ✅ Codebase stable and locked  
 
 ---
+**👩‍💻 Author**
+
+**Prasanna Medam**
+
+📧 Email: prasannamedam30@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/medam-prasanna-3508b62bb
+
+🌐 Portfolio: https://insight-alchemy-deck.lovable.app
+
+🐙 GitHub: https://github.com/prasannamedam
 
